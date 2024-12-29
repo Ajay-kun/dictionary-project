@@ -1,0 +1,130 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #011627;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.5s;
+}
+
+
+.container-expanded {
+    background-color: transparent;
+    width: 60%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 50px 50px;
+    border: 1px solid rgb(0, 234, 255);
+    border-radius: 10px;
+    transition: all 0.5s;
+  }
+  
+.container-small {
+     background-color: transparent;
+    width: 25%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    padding: 50px 50px;
+    border: 1px solid rgb(0, 234, 255);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.search-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s;
+}
+.search-box input {
+    outline: none;
+    border-top: 3px;
+    border-left: none;
+    border-right: none;
+    width: 80%;
+    color: whitesmoke; 
+    background-color: transparent;
+    border-color: rgb(49, 158, 165);
+    transition: all 0.5s;
+}
+
+.search-box input::placeholder {
+ 
+    color: rgb(228, 226, 226);
+    transition: all 0.5s;
+}
+.search-box button {
+    padding: 10px 5px;
+  width: 15%;
+  border: none;
+  border-radius: 40px;
+  background-color: rgb(0, 234, 255);
+  color: black;
+ outline: none;
+ cursor: pointer;
+ transition: all 0.5s;
+}
+.search-box button:hover {
+
+  background-color: #05797d;
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+ outline: none;
+ cursor: pointer;
+ transition: all 0.5s;
+}
+.result {
+    position: relative;
+    transition: all 0.5s;
+}
+.result h3 {
+    font-size: 30px;
+    color: #05a784;
+    transition: all 0.5s;
+}
+.result .word {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    transition: all 0.5s;
+}
+.result button {
+    background-color: transparent;
+    color: #ae9cff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.result .details {
+    display: flex;
+    gap: 10px;
+    color: #036e60;
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.word-meaning {
+    color: #14d0ca;
+    transition: all 0.5s;
+}
+.word-example {
+    color: #8d0bf1;
+    font-style: italic;
+    border-left: 5px solid #d503ff;
+    padding-left: 20px;
+    margin-top: 30px;
+    transition: all 0.5s;
+}
+.error {
+    margin-top: 80px;
+    text-align: center;
+    transition: all 0.5s;
+}
